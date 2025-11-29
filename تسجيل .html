@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="login-box">
+            <h2>تسجيل الدخول</h2>
+            <p class="subtext">سجل الدخول لحسابك للوصول إلى الميزات الحصرية</p>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" placeholder="">
+
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" placeholder="">
+
+            <div class="options">
+                
+                    <input type="checkbox" id="remember">
+                    <label for="remember">تذكرني</label>
+                
+                <a href="#">نسيت كلمة المرور؟</a>
+            </div>
+           
+            <button>تسجيل الدخول</button>
+            
+            <p class="signup">ليس لديك حساب؟ <a href="#" class="create">أنشئ حساباً</a></p>
+        </form>
+    </div>
+</body>
+<script>
+  document.querySelector("button").addEventListener("click", function(event) {
+    event.preventDefault(); // يمنع الفورم من الإرسال
+    
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email === "" || password === "") {
+      alert("من فضلك املأ البريد الإلكتروني وكلمة المرور");
+    } else {
+      window.location.href = "home.html"; 
+  }});
+</script>
+
+</html>

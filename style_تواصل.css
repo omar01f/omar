@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'CAIRO', sans-serif;
+    background-color: #f5f6f8;
+    direction: rtl;
+}
+* {
+    box-sizing: border-box;
+}
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 4px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 18px;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(to left, blue, #1249ff);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+
+.navbar img {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.footer {
+  margin-top: auto;
+  padding: 14px;
+  width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #252020, #9c8cc4);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: cyan;
+}
+ .contact-container {
+      display: block;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-between;
+    }
+
+    .contact-form, .contact-info {
+      font-family: 'Tajawal', sans-serif;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      margin: 10px;
+      min-width: 280px;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #0d6efd;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0b5ed7;
+    }
+
+    .info-item {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .info-item span {
+      font-weight: bold;
+      color: #0d6efd;
+    }
